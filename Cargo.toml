@@ -1,0 +1,12 @@
+[package]
+name = "sfml_open_music"
+version = "0.1.0"
+authors = ["Kolsky"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hound = "3.4"
+sfml.git = "https://github.com/Kolsky/rust-sfml"
+sfml.branch = "experimental"
