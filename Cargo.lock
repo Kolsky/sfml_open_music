@@ -11,7 +11,7 @@ checksum = "cf1de2fe8c75bc145a2f577add951f8134889b4795d47466a54a5c846d691693"
 [[package]]
 name = "csfml-audio-sys"
 version = "0.6.0"
-source = "git+https://github.com/Kolsky/rust-sfml?branch=experimental#1d1ead122c57428ba449299baaba3e8e81403096"
+source = "git+https://github.com/Kolsky/rust-sfml#a8dae4f935eca51987bd6a7efcdff2e39da1a430"
 dependencies = [
  "csfml-system-sys",
  "sfml-build",
@@ -20,7 +20,7 @@ dependencies = [
 [[package]]
 name = "csfml-graphics-sys"
 version = "0.6.0"
-source = "git+https://github.com/Kolsky/rust-sfml?branch=experimental#1d1ead122c57428ba449299baaba3e8e81403096"
+source = "git+https://github.com/Kolsky/rust-sfml#a8dae4f935eca51987bd6a7efcdff2e39da1a430"
 dependencies = [
  "csfml-system-sys",
  "csfml-window-sys",
@@ -30,7 +30,7 @@ dependencies = [
 [[package]]
 name = "csfml-system-sys"
 version = "0.6.0"
-source = "git+https://github.com/Kolsky/rust-sfml?branch=experimental#1d1ead122c57428ba449299baaba3e8e81403096"
+source = "git+https://github.com/Kolsky/rust-sfml#a8dae4f935eca51987bd6a7efcdff2e39da1a430"
 dependencies = [
  "sfml-build",
 ]
@@ -38,7 +38,7 @@ dependencies = [
 [[package]]
 name = "csfml-window-sys"
 version = "0.6.0"
-source = "git+https://github.com/Kolsky/rust-sfml?branch=experimental#1d1ead122c57428ba449299baaba3e8e81403096"
+source = "git+https://github.com/Kolsky/rust-sfml#a8dae4f935eca51987bd6a7efcdff2e39da1a430"
 dependencies = [
  "csfml-system-sys",
  "sfml-build",
@@ -59,7 +59,7 @@ checksum = "692fcb63b64b1758029e0a96ee63e049ce8c5948587f2f7208df04625e5f6b56"
 [[package]]
 name = "sfml"
 version = "0.16.0"
-source = "git+https://github.com/Kolsky/rust-sfml?branch=experimental#1d1ead122c57428ba449299baaba3e8e81403096"
+source = "git+https://github.com/Kolsky/rust-sfml#a8dae4f935eca51987bd6a7efcdff2e39da1a430"
 dependencies = [
  "bitflags",
  "csfml-audio-sys",
@@ -73,7 +73,7 @@ dependencies = [
 [[package]]
 name = "sfml-build"
 version = "0.4.0"
-source = "git+https://github.com/Kolsky/rust-sfml?branch=experimental#1d1ead122c57428ba449299baaba3e8e81403096"
+source = "git+https://github.com/Kolsky/rust-sfml#a8dae4f935eca51987bd6a7efcdff2e39da1a430"
 
 [[package]]
 name = "sfml_open_music"

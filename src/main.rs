@@ -43,7 +43,6 @@ fn main() {
         FromFile,
         FromMemory,
         FromStream,
-        FromStreamWithBox,
     }
     let load = Load::FromStream;
 
@@ -58,10 +57,6 @@ fn main() {
         Load::FromStream => {
             mc = load_120_bpm(8);
             Music::from_stream(&mut mc)
-        }
-        Load::FromStreamWithBox => {
-            mc = load_120_bpm(8);
-            Music::from_stream_with_box(&mut mc)
         }
     }
     .expect("failed to convert 120_bpm.wav");

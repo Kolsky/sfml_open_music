@@ -9,4 +9,3 @@ edition = "2018"
 [dependencies]
 hound = "3.4"
 sfml.git = "https://github.com/Kolsky/rust-sfml"
-sfml.branch = "experimental"
