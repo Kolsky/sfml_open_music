@@ -8,4 +8,5 @@ edition = "2018"
 
 [dependencies]
 hound = "3.4"
-sfml.git = "https://github.com/Kolsky/rust-sfml"
+sfml.git = "https://github.com/jeremyletang/rust-sfml"
+sfml.branch = "public-inputsream"

@@ -2,7 +2,7 @@ use hound::{WavReader, WavWriter};
 use sfml::{
     audio::Music,
     graphics::{Color, RenderTarget, RenderWindow},
-    system::Time,
+    system::{InputStream, Time},
     window::{Event, Key, Style},
 };
 use std::io::Cursor;
@@ -38,28 +38,11 @@ fn main() {
         RenderWindow::new((800, 600), "SFML Window", Style::CLOSE, &Default::default());
     window.set_vertical_sync_enabled(true);
 
-    #[allow(unused)]
-    enum Load {
-        FromFile,
-        FromMemory,
-        FromStream,
-    }
-    let load = Load::FromStream;
-
-    let mut mc;
-    let md;
-    let mut music = match load {
-        Load::FromFile => Music::from_file("120_bpm.wav"),
-        Load::FromMemory => {
-            md = load_120_bpm_v(8);
-            Music::from_memory(&md)
-        }
-        Load::FromStream => {
-            mc = load_120_bpm(8);
-            Music::from_stream(&mut mc)
-        }
-    }
-    .expect("failed to convert 120_bpm.wav");
+    let mut mc = load_120_bpm(8);
+    let mut ist = InputStream::new(&mut mc);
+    let mut music =
+        Music::from_stream(&mut ist)
+        .expect("failed to convert 120_bpm.wav");
 
     music.play();
 
